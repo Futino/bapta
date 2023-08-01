@@ -14,23 +14,30 @@
 
 		<script>
 			/**
-			 * Forces dark theme
+			 * Loads the theme based on the user's preference or system setting.
 			 */
-			document.documentElement.classList.add('dark');
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
 		</script>
 
-		<meta http-equiv="content-security-policy" content="child-src 'self'; worker-src 'self'; object-src 'none'; script-src 'strict-dynamic' 'sha256-5YL4/7jQ2wHbIW+/6gQCDXi0r4rVPpoJKFeviOAmwEs=' 'sha256-oq9aJO3GfnzpCkD11vxsHdCym8tURBIXxISEy6N4wus='; base-uri 'self'; require-trusted-types-for 'script'">
+		<meta http-equiv="content-security-policy" content="child-src 'self'; worker-src 'self'; object-src 'none'; script-src 'strict-dynamic' 'sha256-5YL4/7jQ2wHbIW+/6gQCDXi0r4rVPpoJKFeviOAmwEs=' 'sha256-DqUAR0QaUNq83QqBgdz5HbEtAoLhd9UQQpGJWjxzf8o='; base-uri 'self'; require-trusted-types-for 'script'">
 		<link href="../_app/immutable/assets/0.04505d96.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.41a20fb7.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.b42b9d5d.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.52f72a43.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.4ebafb71.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.ff65520f.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.6b01bada.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.0fd46021.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.93808a2d.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.fe7543f0.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.46dabef3.js">
 		<link rel="modulepreload" href="../_app/immutable/nodes/0.c3287f57.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.c6e2be81.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Header.aa1500ab.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Footer.6ef252a1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/7.019596f7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Header.85b958ac.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Footer.49fc9500.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/OutlineButton.3a0f8219.js">
 	</head>
 	<body
@@ -42,7 +49,7 @@
 			
 			<script>
 				{
-					__sveltekit_1gkffej = {
+					__sveltekit_it176j = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -52,8 +59,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.41a20fb7.js"),
-						import("../_app/immutable/entry/app.6b01bada.js")
+						import("../_app/immutable/entry/start.b42b9d5d.js"),
+						import("../_app/immutable/entry/app.fe7543f0.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],

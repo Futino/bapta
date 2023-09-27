@@ -7,7 +7,7 @@ const e=[{index:0,question:"What is the best time to go on a safari in Tanzania?
             and budget.`},{index:2,question:"How close will we get to the wildlife during the safari?",answer:`Our experienced guides will prioritize your safety while ensuring
             you get close enough to observe wildlife in their natural habitat.
             We adhere to strict park guidelines to maintain a safe and
-            respectful distance from animals.`},{index:3,question:"What should I pack for the safari?",answer:`Pack lightweight and breathable clothing in neutral colors, a
+            respectful distance from animals.`},{index:3,question:"What should I pack for the safari?",answer:`Pack  and breathable clothing in neutral colors, a
             wide-brimmed hat, sunscreen, insect repellent, sturdy walking
             shoes, a camera, and binoculars. Don't forget your passport,
             necessary medications, and any personal essentials.`},{index:4,question:"Are safaris suitable for children?",answer:`Yes, we offer family-friendly safaris. However, the minimum age
